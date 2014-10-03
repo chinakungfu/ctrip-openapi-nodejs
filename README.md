@@ -1,4 +1,2 @@
-ctrip-openapi-nodejs
-====================
-
-ctrip openapi for nodejs
+# ctrip-openapi
+> ctrip openapi for nodejs.
