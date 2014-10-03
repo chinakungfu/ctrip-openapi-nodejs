@@ -1,0 +1,27 @@
+{
+  "name": "ctrip-openapi-nodejs",
+  "version": "0.1.0",
+  "description": "ctrip openapi for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fiftyk/ctrip-openapi-nodejs.git"
+  },
+  "keywords": [
+    "openapi",
+    "ctrip",
+    "nodejs"
+  ],
+  "author": "LiuRongtao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiftyk/ctrip-openapi-nodejs/issues"
+  },
+  "homepage": "https://github.com/fiftyk/ctrip-openapi-nodejs",
+  "dependencies": {
+    "soap": "^0.5.1"
+  }
+}
