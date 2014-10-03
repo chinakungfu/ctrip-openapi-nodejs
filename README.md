@@ -1,5 +1,4 @@
-# ctrip-openapi 
-[![NPM version][npm-image]][npm-url][![Build Status][travis-image]][travis-url]
+# ctrip-openapi [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 > ctrip openapi for nodejs.
 
 [npm-url]: https://npmjs.org/package/ctrip-openapi
