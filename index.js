@@ -19,13 +19,13 @@ ctrip.request = function (path, data, callback){
   });
 };
 
-var signature = ctrip.signature = function (requesttype, allianceid, apikey, sid) {
+ctrip.signature = function (requesttype, allianceid, apikey, sid) {
   return md5(new Date().getTime() + allianceid + md5(apikey).upper() + sid + requesttype).upper()
 };
 
 ctrip.header = function (requesttype, allianceid, apikey, sid) {
   var timestamp = new Date().getTime();
-  var signature = signature(requesttype, allianceid, apikey, sid);
+  var signature = ctrip.signature(requesttype, allianceid, apikey, sid);
 
   return '<Header AllianceID="' + allianceid + 
     '" SID="' + sid + 
