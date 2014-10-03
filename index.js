@@ -1,3 +1,5 @@
+'use strict';
+
 var soap = require('soap');
 var crypto = require('crypto');
 
@@ -5,13 +7,13 @@ var md5 = function (str) {
   return crypto.createHash('md5').update(str).digest('hex');
 };
 
-var baseUrl = 'http://openapi.ctrip.com/'
+var baseUrl = 'http://openapi.ctrip.com/';
 var wsdl = '.asmx?wsdl';
 
 var ctrip = module.exports = {};
 
 ctrip.signature = function (requesttype, allianceid, apikey, sid) {
-  return md5(new Date().getTime() + allianceid + md5(apikey).toUpperCase() + sid + requesttype).toUpperCase()
+  return md5(new Date().getTime() + allianceid + md5(apikey).toUpperCase() + sid + requesttype).toUpperCase();
 };
 
 ctrip.header = function (requesttype, allianceid, apikey, sid) {
@@ -22,7 +24,7 @@ ctrip.header = function (requesttype, allianceid, apikey, sid) {
     '" SID="' + sid + 
     '" TimeStamp="' + timestamp + 
     '" Signature="' + signature + 
-    '" RequestType="' + requesttype + '"/>'
+    '" RequestType="' + requesttype + '"/>';
 };
 
 ctrip.request = function (path, data, callback){

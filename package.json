@@ -1,6 +1,6 @@
 {
   "name": "ctrip-openapi",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "ctrip openapi for nodejs",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,15 @@
   "homepage": "https://github.com/fiftyk/ctrip-openapi-nodejs",
   "dependencies": {
     "soap": "^0.5.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-karma": "^0.9.0",
+    "jshint-stylish": "^1.0.0",
+    "karma": "^0.12.24",
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^1.0.0"
   }
 }
