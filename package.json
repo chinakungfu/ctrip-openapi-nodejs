@@ -1,5 +1,5 @@
 {
-  "name": "ctrip-openapi-nodejs",
+  "name": "ctrip-openapi",
   "version": "0.1.0",
   "description": "ctrip openapi for nodejs",
   "main": "index.js",
